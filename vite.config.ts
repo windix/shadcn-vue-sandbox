@@ -3,6 +3,8 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import { VueRouterAutoImports } from 'unplugin-vue-router'
+import VueRouter from 'unplugin-vue-router/vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
@@ -25,10 +27,10 @@ export default defineConfig({
         // presets
         'vue',
         // 'vue-router',
-        // VueRouterAutoImports,
-        {
-          pinia: ['defineStore', 'storeToRefs', 'acceptHMRUpdate'],
-        },
+        VueRouterAutoImports,
+        // {
+        //   pinia: ['defineStore', 'storeToRefs', 'acceptHMRUpdate'],
+        // },
       ],
 
       dirs: ['./src/stores/**/*.ts', './src/composables/**/*.ts'],
@@ -44,6 +46,7 @@ export default defineConfig({
     Components({
       dts: true,
     }),
+    VueRouter({}), // must be placed before vue()
     vue(),
     tailwindcss(),
     vueDevTools(),
