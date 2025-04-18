@@ -1,5 +1,7 @@
 # shadcn-vue-sandbox
 
+https://shadcn-vue-sandbox.vercel.app/
+
 ## Components
 
 > The latest template is in `template` branch
