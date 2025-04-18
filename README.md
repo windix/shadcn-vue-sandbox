@@ -1,18 +1,22 @@
 # shadcn-vue-sandbox
 
-This template should help get you started developing with Vue 3 in Vite.
+## Components
 
-## Recommended IDE Setup
+> The latest template is in `template` branch
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+This project includes the following components:
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+- [Vue.js](https://vuejs.org/guide/quick-start.html) v3.5
+  - [pinia](https://pinia.vuejs.org/getting-started.html) v3.0
+  - [unplugin-auto-import](https://github.com/unplugin/unplugin-auto-import) v19.1
+  - [unplugin-vue-components](https://github.com/unplugin/unplugin-vue-components) v28.4
+  - [vue-router](https://router.vuejs.org/installation.html) v4.5
+  - [unplugin-vue-router](https://uvr.esm.is/introduction) v0.12
+- [Typescript](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-8.html) v5.8
+- [ESLint](https://eslint.org/docs/latest/use/getting-started) v9.24
+- [Prettier](https://prettier.io/docs/install) v3.5.3
+- [Tailwind CSS](https://tailwindcss.com/docs/installation/using-vite) v4.1
+- [Shadcn/vue](https://www.shadcn-vue.com/docs/installation/vite.html) v2.0
 
 ## Project Setup
 
