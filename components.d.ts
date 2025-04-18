@@ -18,5 +18,7 @@ declare module 'vue' {
     CardTitle: typeof import('./src/components/ui/card/CardTitle.vue')['default']
     Input: typeof import('./src/components/ui/input/Input.vue')['default']
     Label: typeof import('./src/components/ui/label/Label.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
   }
 }
