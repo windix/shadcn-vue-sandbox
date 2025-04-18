@@ -28,9 +28,9 @@ export default defineConfig({
         'vue',
         // 'vue-router',
         VueRouterAutoImports,
-        // {
-        //   pinia: ['defineStore', 'storeToRefs', 'acceptHMRUpdate'],
-        // },
+        {
+          pinia: ['defineStore', 'storeToRefs', 'acceptHMRUpdate'],
+        },
       ],
 
       dirs: ['./src/stores/**/*.ts', './src/composables/**/*.ts'],
